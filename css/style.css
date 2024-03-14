@@ -144,7 +144,7 @@ footer {
     display: flex;
     align-items: center;
     /* justify-content: center; */
-    background-color: #000;
+    background-color: #efefef;
 }
 
 footer .footer-content {
