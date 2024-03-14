@@ -154,6 +154,7 @@ footer .footer-content {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    align-self:auto;
 }
 
 footer .footer-content .social-icons {
