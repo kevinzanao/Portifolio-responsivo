@@ -24,12 +24,12 @@ header {
     /* border: 1px solid red; */
 }
 
-header div {
+header .title, header .navigation-menu {
     height: 100%;
     background-color: #FDC435;
 }
 
-header div:first-child {
+header .title {
     width: 60%; 
     display: flex;
     align-items: center;
@@ -42,39 +42,47 @@ header h1 {
     /* font-weight: 200; */
 }
 
-header div:nth-child(2) {
+header .navigation-menu {
     width: 40%; 
 }
 
-header div nav {
+header .navigation-menu nav {
     width: 100%; height: 100%;
     display: flex;
     align-items: center;
     /* justify-content: center; */
 }
 
-header div nav ul {
+header .navigation-menu nav ul {
     width: 100%;
     text-align: center;
 }
 
-header div nav ul {
+header .navigation-menu nav ul {
     display: flex;
 }
 
-header div nav ul li {
+header .navigation-menu nav ul li {
     list-style: none;
     flex: 1;
 }
 
-header div nav ul li a {
+header .navigation-menu nav ul li a {
     text-underline-offset: .5rem;
     font-size: 1.1rem;
     color: #000;
 }
 
-header div nav ul li a:hover {
+header .navigation-menu nav ul li a:hover {
     color: #fff;
+}
+
+header .navigation-menu .menu {
+    display: none;
+}
+
+header .navigation-menu .menu > .bar {
+    display: block;
 }
 
 
@@ -187,6 +195,37 @@ footer p {
 }
 
 @media(max-width:768px) {
+
+    header .navigation-menu {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    header .navigation-menu nav {
+        display: none;
+    }
+
+    header .navigation-menu .menu {
+        width: 10%; height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-right: 1rem;
+        cursor: pointer;
+        /* background-color: red; */
+    }
+
+    header .navigation-menu .menu .bar {
+        /* width: 100%; */
+        border: .1em solid #000;
+    }
+
+    header .navigation-menu .menu:hover .bar{
+        border: .1em solid #fff;
+    }
+
+
     main {
         flex-direction: column;
     }
