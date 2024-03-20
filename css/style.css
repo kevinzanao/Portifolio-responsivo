@@ -33,13 +33,14 @@ header .title {
     width: 60%; 
     display: flex;
     align-items: center;
-    padding-left: 3.5rem;
+    /* padding-left: 3.5rem; */
 }
 
 header h1 {
+    width: 100%;
     font-size: 1.6rem;
     font-weight: 200;
-    /* font-weight: 200; */
+    margin-left: 3.5em;
 }
 
 header .navigation-menu {
@@ -196,6 +197,10 @@ footer p {
 
 @media(max-width:768px) {
 
+    header .title h1 {
+        margin-left: 1.8em;
+    }
+
     header .navigation-menu {
         display: flex;
         align-items: center;
@@ -207,7 +212,8 @@ footer p {
     }
 
     header .navigation-menu .menu {
-        width: 10%; height: 50%;
+        width: 10%; height: 40%;
+        min-width: 25px; 
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -218,7 +224,7 @@ footer p {
 
     header .navigation-menu .menu .bar {
         /* width: 100%; */
-        border: .1em solid #000;
+        border: .09em solid #000;
     }
 
     header .navigation-menu .menu:hover .bar{
